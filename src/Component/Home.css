@@ -1,0 +1,40 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    height: 800px;
+    background-color:lightcyan;
+    margin-left: 90px;
+    position: fixed;
+    position: sticky;
+}
+.sam{
+    margin-left: 135px;
+    margin-bottom: -5px;
+}
+.pam{
+    margin-left: 15px;
+}
+.loc{
+    margin-left: 15px;
+}
+.header{
+    background-color: antiquewhite;
+}
+.input{
+    padding: 10px 8px 5px 5px;
+    margin-bottom: 10px;
+    width: 68%;
+    margin-left: 30px;
+    border-radius: 5px 5px;
+}
+.label{
+    margin-left: 10px;
+}
+.container1{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color:lightcyan ;
+}

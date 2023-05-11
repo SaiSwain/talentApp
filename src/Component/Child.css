@@ -1,0 +1,16 @@
+*{
+    margin: 10;
+    padding: 10;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    list-style: none;
+    height: 20px;
+    margin-left: 800px;
+}
+.sai1{
+    margin-left: 25px;
+  margin-top: px;
+}
