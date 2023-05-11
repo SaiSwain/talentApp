@@ -35,7 +35,7 @@ function Navbar() {
         setserch(false)
     }
     let improve=()=>{
-      navigate("/login")
+      navigate("/job/search")
     }
   return (
     <div>
@@ -52,7 +52,7 @@ function Navbar() {
 <HiMapPin /><input type="search"className='send'id="two" placeholder='City'onChange={itemEvent}value={inputList}  />
 </div>
 
-<button className='search'onClick={listOfItems}><Link to="/login">Search</Link>
+<button className='search'onClick={listOfItems}><span onClick={improve}>Serch</span>
 </button>
 </div>
   
