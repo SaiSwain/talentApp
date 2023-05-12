@@ -9,9 +9,8 @@ const App=()=>{
     <div>
       <BrowserRouter>
       <Navbar/>
-      <Com/>
       <Routes>
-        <Route path="/"element={<Home/>}></Route>
+        <Route path="/job/search"element={<Home/>}></Route>
         {/* <Route index path="/"element={<Navbar/>}></Route> */}
         <Route path="/job/search" element={<Home/>}/>
       </Routes>
