@@ -1,15 +1,16 @@
-import React from "react"
+import React,{useState} from "react"
 import "./Home.css";
 import {GoTrashcan}from "react-icons/go";
+import talent from "./images/talent1.png";
+import ReactDOM from 'react-dom';
+import InputRange from 'react-input-range';
+import 'react-input-range/lib/css/index.css';
 const Home=()=>{
-//   var sli = document.getElementById("myRange");
-//   var output = document.getElementById("demo");
-//     output.innerHTML = sli.value;
-//     sli.oninput = function() {
-//     output.innerHTML = this.value;
-// }
+  const [value, setValue] = useState({ min: 0, max: 20 });
+  const handleRangeChange = (value) => {
+      setValue(value);
+    };
     return(
-   
         <div>
            <form className="form">
            <div className="header">
@@ -187,10 +188,14 @@ const Home=()=>{
             <label>Chemical</label>
           </div>
           <h6>Experience</h6>
-          <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="sli" id="myRange"/>
-          <p style={{marginLeft:"90px",marginTop:"1px"}}>Value: <span id="demo"></span></p>
-        </div>
+          <InputRange
+          maxValue={20}
+        minValue={0}
+         value={value}
+          onChange={handleRangeChange}
+          />
+        <p className='range'>{value.min}years</p>
+          <p className='rangeOne'>{value.max}+years</p>
           <h6 className="slid">Travel Required
           <span style={{marginLeft:"70px"}}><label class="switch">
           <input type="checkbox"/>
@@ -205,7 +210,170 @@ const Home=()=>{
           <input className="input1" type="date"placeholder="City"></input>
           </div>
            </form>
+           <div className="count">
+          <div className="row">
+       {/* <---><---> */}
+
+          <div className="card">
+        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img>
+        <div className="h1"style={{marginBottom:"10px",marginRight:"0px"}}>5year experience in c++ Development </div>
+      <div className="p"style={{marginTop:"2px",fontSize:"10px"}}>Full Time.5-10 Yrs</div>
+      <div className="location"style={{marginTop:"2px",fontSize:"10px"}}><span style={{color:"skyblue"}}>bangalore,karnataka</span></div>
+      <hr></hr>
+      <div className="footer"></div>STIXIS Technologies</div>
+      </div>
+       <div className="card">
+        <div className="image"><img src={talent}style={{height:"30px",marginBottom:"120px",marginRight:"40px"}}/></div>
+        <div className="h1"style={{marginBottom:"0px",marginRight:"-40px"}}></div>
+      <div className="p"style={{marginTop:"2px",fontSize:"0px"}}></div>
+      <div className="location"style={{marginTop:"2px",fontSize:"0px"}}><span style={{color:"skyblue"}}>bangalore,karnataka</span></div>
+      <hr></hr>
+      <div className="footer">
+      </div>
+       </div>
+       <div className="card">
+        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
+        <div className="h1"></div>
+      <div className="p"></div>
+      <div className="location"></div>
+      <div className="footer">
+      </div>
+       </div>
+       <div className="card">
+        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
+        <div className="h1"></div>
+      <div className="p"></div>
+      <div className="location"></div>
+      <div className="footer">
+      </div>
+       </div>
+      
+{/* <___></___> */}
+
+       </div>
+     <div className="row1">
+<div className="half">
+
+     <div className="card">
+        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px",marginBottom:"100px"}}></img></div>
+        <div className="h1"style={{marginBottom:"10px",marginRight:"0px"}}></div>
+      <div className="p"></div>
+      <div className="location"></div>
+      <div className="footer">
+      </div>
+       </div>
+       <div className="card">
+        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
+        <div className="h1"></div>
+      <div className="p"></div>
+      <div className="location"></div>
+      <div className="footer">
+      </div>
+       </div>
+       <div className="card">
+        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
+        <div className="h1"></div>
+      <div className="p"></div>
+      <div className="location"></div>
+      <div className="footer">
+      </div>
+       </div>
+       <div className="card">
+        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
+        <div className="h1"></div>
+      <div className="p"></div>
+      <div className="location"></div>
+      <div className="footer">
+      </div>
+       </div>
+       </div>
+
+
+     </div>
+      
+        {/* <div class="wrapper">
+	<div class="header">Avengers Responsive Cards UI Design</div>
+	<div class="cards_wrap">
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="black_panther.png"/>
+				<div class="role_name">Black Panther</div>
+				<div class="real_name">Chadwick Boseman</div>
+				<div class="film">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="doctor_strange.png"/>
+				<div class="role_name">Doctor Strange</div>
+				<div class="real_name">Benedict Cumberbatch</div>
+				<div class="film">Lorem ipsum
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="black_widow.png"/>
+				<div class="role_name">Black Widow</div>
+				<div class="real_name">Scarlett Johansson</div>
+				<div class="film">Lorem ipsum 
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="Spider_man.png"/>
+				<div class="role_name">Spider Man</div>
+				<div class="real_name">Tom Holland</div>
+				<div class="film">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="black_widow.png"/>
+				<div class="role_name">Black Widow</div>
+				<div class="real_name">Scarlett Johansson</div>
+				<div class="film">Lorem ipsum dolor 
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="black_panther.png"/>
+				<div class="role_name">Black Panther</div>
+				<div class="real_name">Chadwick Boseman</div>
+				<div class="film">Lorem ipsum 
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="Spider_man.png"/>
+				<div class="role_name">Spider Man</div>
+				<div class="real_name">Tom Holland</div>
+				<div class="film">Lorem
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+		<div class="card_item">
+			<div class="card_inner">
+				<img src="doctor_strange.png"/>
+				<div class="role_name">Doctor Strange</div>
+				<div class="real_name">Benedict Cumberbatch</div>
+				<div class="film">Lorem 
+				tempor incididunt aliqua.</div>
+			</div>
+		</div>
+	</div>
+</div>   */}
+
         </div>
+      
+      </div>
+
+      
   
      
     )
