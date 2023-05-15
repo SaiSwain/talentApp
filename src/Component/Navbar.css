@@ -1,23 +1,29 @@
 #button{
-    margin-left: 300px;
+    margin-left: 230px;
   }
   .send{
-    padding:10px;
+    padding:15px;
     border:1px solid rgb(235, 229, 229);
+  }
+  .search-box1{
+    margin-bottom: -200px;
   }
   h2{
     font-size:40px;
     text-align: center;
   }
   #one{
-    width:310px;
+    width:10px;
     border-right: 1px solid grey;
   }
   #two{
-    width:410px;
+    width:10px;
   }
   .send:focus{
     border:none;
+  }
+  .search{
+    margin-right: -100px;
   }
   .search{
     padding:8px;
@@ -25,23 +31,31 @@
     width:100px;
     border-radius: 8px;
     border:1px solid #4cc29b;
-    margin-left: -85px;
+    margin-right: -875px;
     height:30px;
-    margin-top:2px;
+    margin-top:7px;
   }
-  .container{
+  .containe{
     display: flex;
     background-color: white;
-    width: 770px;
+    width: 970px;
     border:1px solid rgb(247, 239, 239);
     border-radius: 5px;
-    margin-left: 300px;
+    margin-left: 225px;
+    margin-bottom: 100px;
+  }
+  .bt{
+    margin-right: -560px;
+  }
+  .head{
+    margin-top: -80px;
   }
   .btn{
-    padding:15px 45px;
+    padding:10px 35px;
     border:1px solid grey;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+  
   }
   .heading{
     color:hsl(182, 88%, 49%);
@@ -57,5 +71,106 @@
     color:grey;
     margin-top: -20px;
     font-size: 18px;
-    
   }
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+body{
+	background: #eeeff4;
+}
+
+.wrapper .header{
+	width: 100%;
+	height: 10px;
+	background: #0c0000;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 900;
+  border-radius: 10px 10px;
+ 
+}
+
+.cards_wrap{
+	padding: 10px;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  border-radius: 20px 20px;
+  column-gap: 5px;
+  margin-left: 60px;
+}
+
+.cards_wrap .card_item{
+	padding: 5px 5px;
+	width: 10%;
+}
+
+.cards_wrap .card_inner{
+	background: #fff;
+	border-radius: 5px;
+	padding: 5px 25px;
+	min-width:0px;
+	min-height: 85px;
+	max-height: 90px;
+	width: 80%;
+}
+
+.cards_wrap .card_item .img{
+	width: 70px;
+	height: 70px;
+	margin-bottom: 0px;
+}
+
+.cards_wrap .card_item .role_name{
+	color: #110105;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 15px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cards_wrap .card_item .real_name{
+	color: #b6c0c2;
+	font-size: 12px;
+	font-weight: 100;
+	margin: 5px 0px 5px;
+}
+
+.cards_wrap .card_item .film{
+	font-size: 14px;
+	line-height: 24px;
+	color: #7b8ca0;
+}
+
+@media screen and (max-width: 1024px){
+	.cards_wrap .card_item{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.cards_wrap .card_item{
+		width: 40%;
+	}
+	.wrapper .header{
+		font-size: 16px;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 568px){
+	.cards_wrap .card_item{
+		width: 10%;
+	}
+	.wrapper .header{
+		font-size: 14px;
+	}
+}
