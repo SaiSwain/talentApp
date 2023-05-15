@@ -1,18 +1,97 @@
-import React,{useState} from "react"
+import React,{useState,useRef,useEffect} from "react"
+import {Calendar}from "react-date-range"
+import format from "date-fns/format"
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import "./Home.css";
+import photo from"./images/sa.jpeg";
 import {GoTrashcan}from "react-icons/go";
 import talent from "./images/talent1.png";
 import ReactDOM from 'react-dom';
 import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
+import { FaSistrix} from "react-icons/fa";
+import { HiMapPin } from "react-icons/hi2";
+import Child from "./Child";
+import {Link,NavLink,useNavigate}from "react-router-dom"
+
 const Home=()=>{
   const [value, setValue] = useState({ min: 0, max: 20 });
+  let navigate = useNavigate();
+  const[items,setItems]=useState([]);
+  const[inputList,setInputList]=useState("");
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
+
+  const handleStartDateChange = (date) => {
+    setStartDate(date);
+  };
+
+  const handleEndDateChange = (date) => {
+    setEndDate(date);
+  };
+
+  // const[input,setInput]=useState([]);
   const handleRangeChange = (value) => {
       setValue(value);
     };
+    const itemEvent=(event)=>{
+  setInputList(event.target.checked?event.target.value:"");
+    }
+    // const itemEven=(event)=>{
+    //   setInputList(event.target.value);
+    // }
+    const handleInputDelete = () => {
+      setInputList('');
+    };
+    const listOfItems=()=>{
+      setItems((oldItems)=>{
+        return[...oldItems,inputList]
+      })
+      //  setInputList("");
+    }
+    // const listOfItem=()=>{
+    //   setItems((oldItems)=>{
+    //     return[...oldItems,input]
+    //   })
+    //   //  setInputList("");
+    // }
+    const deleteitem=(id)=>{
+      setItems((oldItems)=>{
+        return oldItems.filter((arrElem,index)=>{
+          return index!==id;
+        })
+      })
+    }
+   
+    let improve=()=>{
+      navigate("/job/search")
+    }
     return(
         <div>
-           <form className="form">
+    
+          <div className="phot "><img src={photo}className="image"></img></div>
+ <div className='container'>
+        <div className='search-box1'>
+    <FaSistrix className='search-icon'/><input type="search"id="one" className='send'onChange={itemEvent}placeholder='Skill/job roles'></input>
+        </div>
+<div className='search-box2'>
+<HiMapPin /><input type="search"className='send'id="two" placeholder='City'onChange={itemEvent}value={inputList} />
+</div>
+
+<button className='search'onClick={listOfItems}><span onClick={improve}>Serch</span>
+</button>
+</div>
+<ol>        
+        {
+          items.map((itemval,index)=>{
+            return(
+              <Child key={index}id={index}text={itemval}onSelect={deleteitem}/>
+            ) 
+          })         
+        }
+      </ol>
+           <form className="form">     
            <div className="header">
             <h6 className="pam">Filter Serch<span className="sam">clearall</span></h6>
           </div>
@@ -20,39 +99,39 @@ const Home=()=>{
           <input className="input" type="text"placeholder="City"></input>
           <div className="container1">
            <div >
-            <input type="checkbox" />
-            <label>Mumbai, Maharashtra</label>
+            <input type="checkbox"onChange={itemEvent}value="Mumbai, Maharashtra"checked={inputList==="Mumbai, Maharashtra"}/>
+            <label value="Mumbai, Maharashtra">Mumbai, Maharashtra</label>
           </div>
           <div>
-            <input type="checkbox" />
-            <label>Bangalore, Karnataka</label>
+            <input type="checkbox"onChange={itemEvent}value="Bangalore, Karnataka"checked={inputList==="Bangalore, Karnataka"} />
+            <label value="Bangalore, Karnataka">Bangalore, Karnataka</label>
           </div>
           <div>
-            <input type="checkbox" />
+            <input type="checkbox"onChange={itemEvent}value="New Delhi, Delhi"checked={inputList==="New Delhi, Delhi"} />
             <label>New Delhi, Delhi</label>
           </div>
           <div>
-            <input type="checkbox" />
+            <input type="checkbox"onChange={itemEvent}value="Kolkata, West Bengal"checked={inputList==="Kolkata, West Bengal"}  />
             <label>Kolkata, West Bengal</label>
           </div>
           <div>
-            <input type="checkbox" />
+            <input type="checkbox"onChange={itemEvent}value="Chennai, Tamil Nadu"checked={inputList==="Chennai, Tamil Nadu"}  />
             <label>Chennai, Tamil Nadu</label>
           </div>
           <div>
-            <input type="checkbox" />
+            <input type="checkbox"onChange={itemEvent}value="Pune, Maharashtra"checked={inputList==="Pune, Maharashtra"} />
             <label>Pune, Maharashtra</label>
           </div>
           <div>
-            <input type="checkbox" />
+            <input type="checkbox"onChange={itemEvent}value="Indore, Madhya Pradesh"checked={inputList==="Indore, Madhya Pradesh"} />
             <label>Indore, Madhya Pradesh</label>
           </div>
           <div>
-            <input type="checkbox" />
+            <input type="checkbox" onChange={itemEvent}value="Ahmedabad, Gujarat"checked={inputList==="Ahmedabad, Gujarat"} />
             <label>Ahmedabad, Gujarat</label>
           </div>
           <div>
-            <input type="checkbox" />
+            <input type="checkbox"onChange={itemEvent}value="Bhubaneswar, Odisha"checked={inputList==="Bhubaneswar, Odisha"} />
             <label>Bhubaneswar, Odisha</label>
           </div>
           <h6 className="loc">salary</h6>
@@ -206,176 +285,287 @@ const Home=()=>{
           <span class="slider round"></span>
           </label></span></h6>
           <h6>Job posted between</h6>
-          <input className="input1" type="date"placeholder="City"></input>
-          <input className="input1" type="date"placeholder="City"></input>
+         
+        <DatePicker  className="date1"
+          selected={startDate}
+          onChange={handleStartDateChange}
+          selectsStart
+          startDate={startDate}
+          endDate={endDate}
+        />
+     
+        <DatePicker className="date2"
+          selected={endDate}
+          onChange={handleEndDateChange}
+          selectsEnd
+          startDate={startDate}
+          endDate={endDate}
+          minDate={startDate}
+        />
           </div>
            </form>
-           <div className="count">
-          <div className="row">
-       {/* <---><---> */}
+           
 
-          <div className="card">
-        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img>
-        <div className="h1"style={{marginBottom:"10px",marginRight:"0px"}}>5year experience in c++ Development </div>
-      <div className="p"style={{marginTop:"2px",fontSize:"10px"}}>Full Time.5-10 Yrs</div>
-      <div className="location"style={{marginTop:"2px",fontSize:"10px"}}><span style={{color:"skyblue"}}>bangalore,karnataka</span></div>
-      <hr></hr>
-      <div className="footer"></div>STIXIS Technologies</div>
-      </div>
-       <div className="card">
-        <div className="image"><img src={talent}style={{height:"30px",marginBottom:"120px",marginRight:"40px"}}/></div>
-        <div className="h1"style={{marginBottom:"0px",marginRight:"-40px"}}></div>
-      <div className="p"style={{marginTop:"2px",fontSize:"0px"}}></div>
-      <div className="location"style={{marginTop:"2px",fontSize:"0px"}}><span style={{color:"skyblue"}}>bangalore,karnataka</span></div>
-      <hr></hr>
-      <div className="footer">
-      </div>
-       </div>
-       <div className="card">
-        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
-        <div className="h1"></div>
-      <div className="p"></div>
-      <div className="location"></div>
-      <div className="footer">
-      </div>
-       </div>
-       <div className="card">
-        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
-        <div className="h1"></div>
-      <div className="p"></div>
-      <div className="location"></div>
-      <div className="footer">
-      </div>
-       </div>
-      
-{/* <___></___> */}
+           <div className="count" >
 
-       </div>
-     <div className="row1">
-<div className="half">
-
-     <div className="card">
-        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px",marginBottom:"100px"}}></img></div>
-        <div className="h1"style={{marginBottom:"10px",marginRight:"0px"}}></div>
-      <div className="p"></div>
-      <div className="location"></div>
-      <div className="footer">
-      </div>
-       </div>
-       <div className="card">
-        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
-        <div className="h1"></div>
-      <div className="p"></div>
-      <div className="location"></div>
-      <div className="footer">
-      </div>
-       </div>
-       <div className="card">
-        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
-        <div className="h1"></div>
-      <div className="p"></div>
-      <div className="location"></div>
-      <div className="footer">
-      </div>
-       </div>
-       <div className="card">
-        <div className="image"><img src={talent}style={{height:"30px",marginRight:"80px"}}></img></div>
-        <div className="h1"></div>
-      <div className="p"></div>
-      <div className="location"></div>
-      <div className="footer">
-      </div>
-       </div>
-       </div>
-
-
-     </div>
-      
-        {/* <div class="wrapper">
-	<div class="header">Avengers Responsive Cards UI Design</div>
-	<div class="cards_wrap">
-		<div class="card_item">
-			<div class="card_inner">
-				<img src="black_panther.png"/>
-				<div class="role_name">Black Panther</div>
-				<div class="real_name">Chadwick Boseman</div>
-				<div class="film">Lorem ipsum dolor
+        <div class="wrappe">
+	<div class="cards_wra">
+		<div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
 				tempor incididunt ut labore et dolore magna aliqua.</div>
 			</div>
 		</div>
-		<div class="card_item">
-			<div class="card_inner">
-				<img src="doctor_strange.png"/>
-				<div class="role_name">Doctor Strange</div>
-				<div class="real_name">Benedict Cumberbatch</div>
-				<div class="film">Lorem ipsum
+		<div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
 				tempor incididunt ut labore et dolore magna aliqua.</div>
 			</div>
 		</div>
-		<div class="card_item">
-			<div class="card_inner">
-				<img src="black_widow.png"/>
-				<div class="role_name">Black Widow</div>
-				<div class="real_name">Scarlett Johansson</div>
-				<div class="film">Lorem ipsum 
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
 				tempor incididunt ut labore et dolore magna aliqua.</div>
 			</div>
 		</div>
-		<div class="card_item">
-			<div class="card_inner">
-				<img src="Spider_man.png"/>
-				<div class="role_name">Spider Man</div>
-				<div class="real_name">Tom Holland</div>
-				<div class="film">Lorem ipsum dolor
+		<div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
 				tempor incididunt ut labore et dolore magna aliqua.</div>
 			</div>
 		</div>
-		<div class="card_item">
-			<div class="card_inner">
-				<img src="black_widow.png"/>
-				<div class="role_name">Black Widow</div>
-				<div class="real_name">Scarlett Johansson</div>
-				<div class="film">Lorem ipsum dolor 
+		<div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
 				tempor incididunt ut labore et dolore magna aliqua.</div>
 			</div>
 		</div>
-		<div class="card_item">
-			<div class="card_inner">
-				<img src="black_panther.png"/>
-				<div class="role_name">Black Panther</div>
-				<div class="real_name">Chadwick Boseman</div>
-				<div class="film">Lorem ipsum 
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
 				tempor incididunt ut labore et dolore magna aliqua.</div>
 			</div>
 		</div>
-		<div class="card_item">
-			<div class="card_inner">
-				<img src="Spider_man.png"/>
-				<div class="role_name">Spider Man</div>
-				<div class="real_name">Tom Holland</div>
-				<div class="film">Lorem
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
 				tempor incididunt ut labore et dolore magna aliqua.</div>
 			</div>
 		</div>
-		<div class="card_item">
-			<div class="card_inner">
-				<img src="doctor_strange.png"/>
-				<div class="role_name">Doctor Strange</div>
-				<div class="real_name">Benedict Cumberbatch</div>
-				<div class="film">Lorem 
-				tempor incididunt aliqua.</div>
+		<div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil">Lorem ipsum dolor
+				tempor incididunt ut labore et dolore magna aliqua.</div>
 			</div>
 		</div>
 	</div>
-</div>   */}
-
+</div>  
         </div>
-      
       </div>
-
-      
-  
-     
     )
 }
 export default Home;

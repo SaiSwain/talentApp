@@ -8,10 +8,10 @@ const App=()=>{
   return(
     <div>
       <BrowserRouter>
-      <Navbar/>
+      
       <Routes>
-        <Route path="/job/search"element={<Home/>}></Route>
-        {/* <Route index path="/"element={<Navbar/>}></Route> */}
+        {/* <Route path="/job/search"element={<Home/>}></Route> */}
+        <Route index path="/"element={<Navbar/>}></Route>
         <Route path="/job/search" element={<Home/>}/>
       </Routes>
       </BrowserRouter>
