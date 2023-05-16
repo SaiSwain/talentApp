@@ -22,7 +22,32 @@ const Home=()=>{
   const[inputList,setInputList]=useState("");
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
+ const [showCheckboxes, setShowCheckboxes] = useState(false);
+  const [displayText, setDisplayText] = useState(false);
 
+  const handleCheckboxButtonClick = () => {
+    setShowCheckboxes(true);
+    setDisplayText(false);
+  };
+
+  const handleTextButtonClick = () => {
+    setShowCheckboxes(false);
+    setDisplayText(true);
+  };
+
+
+  // const [showCheckboxes, setShowCheckboxes] = useState(true);
+  // const [displayText, setDisplayText] = useState(false);
+
+  // const handleButtonClick = () => {
+  //   if (showCheckboxes) {
+  //     setShowCheckboxes(false);
+  //     setDisplayText(true);
+  //   } else {
+  //     setShowCheckboxes(true);
+  //     setDisplayText(false);
+  //   }
+  // };
   const handleStartDateChange = (date) => {
     setStartDate(date);
   };
@@ -69,7 +94,7 @@ const Home=()=>{
     }
     return(
         <div>
-    
+   
           <div className="phot "><img src={photo}className="image"></img></div>
  <div className='container'>
         <div className='search-box1'>
@@ -93,9 +118,9 @@ const Home=()=>{
       </ol>
            <form className="form">     
            <div className="header">
-            <h6 className="pam">Filter Serch<span className="sam">clearall</span></h6>
+            <h6 className="pam">Filter Search<span className="sam">Clearall</span></h6>
           </div>
-          <h6 className="loc">location</h6>
+          <h6 className="loc">Location</h6>
           <input className="input" type="text"placeholder="City"></input>
           <div className="container1">
            <div >
@@ -134,7 +159,7 @@ const Home=()=>{
             <input type="checkbox"onChange={itemEvent}value="Bhubaneswar, Odisha"checked={inputList==="Bhubaneswar, Odisha"} />
             <label>Bhubaneswar, Odisha</label>
           </div>
-          <h6 className="loc">salary</h6>
+          <h6 className="loc">Salary</h6>
           <div>
             <input type="checkbox"/>
             <label>Rs 2Lac-5Lac</label>
@@ -155,7 +180,7 @@ const Home=()=>{
             <input type="checkbox"/>
             <label>Rs 40Lac+</label>
           </div>
-         <h6>preferred Job Type</h6>
+         <h6>Preferred Job Type</h6>
          <div>
             <input type="checkbox"/>
             <label>Ful Time</label>
@@ -171,7 +196,7 @@ const Home=()=>{
          <h6>Joining Preferences</h6>
          <div>
             <input type="checkbox"/>
-            <label>immidiate</label>
+            <label>Immidiate</label>
           </div>
           <div>
             <input type="checkbox"/>
@@ -305,10 +330,16 @@ const Home=()=>{
           </div>
            </form>
            
-
+          
            <div className="count" >
-
+           <div>
+            <div className="v">
+            <button onClick={handleCheckboxButtonClick}className="bg1">Show Checkboxes</button>
+      <button onClick={handleTextButtonClick}className="bg2">Display Text</button></div>
+      {showCheckboxes && (
+             
         <div class="wrappe">
+       
 	<div class="cards_wra">
 		<div class="card_ite">
 			<div class="card_inne">
@@ -316,7 +347,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				tempor .</div>
 			</div>
 		</div>
 		<div class="card_ite">
@@ -325,7 +356,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				tempor .</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -334,7 +365,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				tempor </div>
 			</div>
 		</div>
 		<div class="card_ite">
@@ -343,7 +374,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				tempor .</div>
 			</div>
 		</div>
 		<div class="card_ite">
@@ -352,7 +383,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				tempor .</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -361,7 +392,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				tempor .</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -370,7 +401,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
 		<div class="card_ite">
@@ -379,7 +410,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				tempor .</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -388,7 +419,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -397,7 +428,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -406,7 +437,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -415,7 +446,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+			.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -424,7 +455,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -433,7 +464,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+			.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -442,7 +473,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -451,7 +482,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -460,7 +491,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+			.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -469,7 +500,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -478,7 +509,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+		.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -487,7 +518,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -496,7 +527,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+			.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -505,7 +536,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+				.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -514,7 +545,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+			.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -523,7 +554,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+			.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -532,7 +563,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+			.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -541,7 +572,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+			.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -550,7 +581,7 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+	.</div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -559,13 +590,17 @@ const Home=()=>{
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
 				<div class="fil">Lorem ipsum dolor
-				tempor incididunt ut labore et dolore magna aliqua.</div>
+			.</div>
 			</div>
 		</div>
 	</div>
 </div>  
+           )}
+ {displayText && <p>This is the displayed text.</p>}
+</div>
         </div>
       </div>
     )
+                     
 }
 export default Home;

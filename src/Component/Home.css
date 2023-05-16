@@ -17,7 +17,7 @@
 .container{
   display: flex;
   background-color: white;
-  width: 970px;
+  width: 963px;
   border:1px solid rgb(247, 239, 239);
   border-radius: 5px;
   margin-left: 200px;
@@ -213,7 +213,7 @@
     width: 70%;
     margin-left: 340px;
     margin-top: -1950px;
-    /* position: fixed; */
+ 
 }
 
 
@@ -265,10 +265,10 @@ body{
 }
 
 .wrappe .header{
-	width: 100%;
+	width: 90%;
 	height: 20px;
 	background: #0c0000;
-	color: #fff;
+	color: hsl(0, 25%, 94%);
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -277,38 +277,51 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-weight: 900;
-  border-radius: 20px 20px;
+  border-radius: 40px 30px;
 }
+.v{
+margin-bottom: -10px;
+display: inline-block;
 
+}
+.bg1{
+  margin-left: 700px;
+  margin-bottom: -1200px;
+  position: sticky;
+}
+.bg2{
+  margin-left: 850px;
+  margin-bottom: -100px;
+}
 .cards_wra{
 	padding: 20px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-  border-radius: 20px 20px;
+  border-radius: 40px 30px;
   column-gap: 5px;
 }
 
 .cards_wra .card_ite{
-	padding: 15px 15px;
+	padding: 15px 10px;
 	width: 20%;
+  border-radius: 40px 30px;
 }
 
 .cards_wra .card_inne{
-	background: #fff;
-	border-radius: 5px;
-	padding: 20px 20px;
-	min-width: 125px;
-	min-height: 205px;
-	max-height: 210px;
+	background: #faf2f2;
+	border-radius: 20px;
+	padding: 20px 15px;
+	min-width: 90px;
+	min-height: 125px;
+	max-height: 120px;
 	width: 100%;
 }
 
 .cards_wra .card_ite .im{
-	width: 40px;
-	height: 20px;
-  /* padding: 10px 20px 20px; */
+	width: 40%;
+	height: 30px;
 	margin-bottom: 5px;
 }
 
@@ -319,15 +332,15 @@ body{
 	text-transform: uppercase;
 	font-size: 15px;
 	white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cards_wra .card_ite .real_nam{
 	color: #b6c0c2;
 	font-size: 12px;
 	font-weight: 100;
-	margin: 5px 0 10px;
+	margin: 5px 0 5px;
 }
 
 .cards_wra .card_ite .fil{
@@ -338,7 +351,7 @@ body{
 
 @media screen and (max-width: 1024px){
 	.cards_wra .card_ite{
-		width: 33%;
+		width: 93%;
 	}
 }
 
@@ -354,7 +367,7 @@ body{
 
 @media screen and (max-width: 568px){
 	.cards_wra .card_ite{
-		width: 100%;
+		width: 90%;
 	}
 	.wrappe .header{
 		font-size: 14px;
