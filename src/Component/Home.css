@@ -48,7 +48,7 @@
   }
 .image{
   height: 145px;
-  margin-top: 50px;
+  margin-top: 20px;
   border-radius: 50px;
   margin-top: 90px;
   border: 1px solid dotted red;
@@ -212,7 +212,7 @@
     height: 800vh;
     width: 70%;
     margin-left: 340px;
-    margin-top: -1950px;
+    margin-top: -2050px;
  
 }
 
@@ -262,6 +262,7 @@ margin-top:10px;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
 body{
 	/* background: #eeeff4; */
+  
 }
 
 .wrappe .header{
@@ -279,19 +280,57 @@ body{
 	font-weight: 900;
   border-radius: 40px 30px;
 }
-.v{
-margin-bottom: -10px;
-display: inline-block;
+table,
+tr,
+td{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 0px;
+  font-size: 13px;
+}
+hr{
+  font-size: 12px;
+  border: 0.px solid black ;
+}
+.table{
+  margin-left: 30px;
+}
+.tab:hover{
+background-color:rgb(246, 248, 243);
+}
+.wrappe .header:hover{
+	box-shadow: #4204ec;
+color: #4204ec;
+border: 1px solid #4204ec;
+}
+.wrappe:hover{
+box-shadow: #4204ec;
+color: #4204ec;
 
 }
 .bg1{
-  margin-left: 700px;
-  margin-bottom: -1200px;
+  margin-left: 650px;
+  margin-bottom: -50px;
   position: sticky;
+  padding:10px 15px;
+  border:1px solid grey;
+  border-radius: 40px 40px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+  /* margin-top: -100px; */
+  
 }
 .bg2{
-  margin-left: 850px;
-  margin-bottom: -100px;
+  margin-left: 710px;
+  margin-bottom: -29px;
+  padding:10px 15px;
+  border:1px solid grey;
+  border-radius: 40px 40px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+  /* margin-top: -1000px; */
+ 
 }
 .cards_wra{
 	padding: 20px;
@@ -302,27 +341,41 @@ display: inline-block;
   border-radius: 40px 30px;
   column-gap: 5px;
 }
+.cards_wra:hover{
+  box-shadow: #4204ec;
+color: #4204ec;
+}
 
 .cards_wra .card_ite{
 	padding: 15px 10px;
 	width: 20%;
   border-radius: 40px 30px;
 }
-
+.cards_wra .card_ite:hover{
+  box-shadow: #4204ec;
+  color: #4204ec;
+}
 .cards_wra .card_inne{
 	background: #faf2f2;
 	border-radius: 20px;
 	padding: 20px 15px;
 	min-width: 90px;
 	min-height: 125px;
-	max-height: 120px;
+	max-height: 135px;
 	width: 100%;
 }
-
+.cards_wra .card_inne:hover{
+  box-shadow: #4204ec;
+  color: #4204ec;
+}
 .cards_wra .card_ite .im{
 	width: 40%;
 	height: 30px;
 	margin-bottom: 5px;
+}
+.cards_wra .card_ite .im:hover{
+  box-shadow: #4204ec;
+  color: #4204ec;
 }
 
 .cards_wra .card_ite .role_nam{
@@ -335,12 +388,19 @@ display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+.cards_wra .card_ite .role_nam:hover{
+  box-shadow: #4204ec;
+  color: #4204ec;
+}
 .cards_wra .card_ite .real_nam{
 	color: #b6c0c2;
 	font-size: 12px;
 	font-weight: 100;
 	margin: 5px 0 5px;
+}
+.cards_wra .card_ite .real_nam:hover{
+  box-shadow: #4204ec;
+  color: #4204ec;
 }
 
 .cards_wra .card_ite .fil{
@@ -348,7 +408,10 @@ display: inline-block;
 	line-height: 24px;
 	color: #7b8ca0;
 }
-
+.cards_wra .card_ite .fil:hover{
+	box-shadow: #4204ec;
+  color: #4204ec;
+}
 @media screen and (max-width: 1024px){
 	.cards_wra .card_ite{
 		width: 93%;
@@ -359,9 +422,17 @@ display: inline-block;
 	.cards_wra .card_ite{
 		width: 50%;
 	}
+  .cards_wra .card_ite:hover{
+    box-shadow: #4204ec;
+    color: #4204ec;
+	}
 	.wrappe .header{
 		font-size: 16px;
 		height: 60px;
+	}
+  .wrappe .header:hover{
+    box-shadow: #4204ec;
+    color: #4204ec;
 	}
 }
 
@@ -369,7 +440,15 @@ display: inline-block;
 	.cards_wra .card_ite{
 		width: 90%;
 	}
+  .cards_wra .card_ite:hover{
+		box-shadow: #4204ec;
+    color: #4204ec;
+	}
 	.wrappe .header{
 		font-size: 14px;
+	}
+  .wrappe .header:hover{
+		box-shadow: #4204ec;
+    color: #4204ec;
 	}
 }
