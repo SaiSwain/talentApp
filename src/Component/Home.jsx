@@ -335,8 +335,9 @@ const Home=()=>{
           
            <div className="count" >
            <div>
+        
             <div className="v">
-            <RxComponent2 onClick={handleCheckboxButtonClick}className="bg1">Show</RxComponent2>
+           <h4 className="he">Search result</h4><p className="p">Sort by:</p><h6 className="h">Newest First</h6> <RxComponent2 onClick={handleCheckboxButtonClick}className="bg1">Show</RxComponent2>
       <RxBorderSplit onClick={handleTextButtonClick}className="bg2">Hide</RxBorderSplit></div>
       {showCheckboxes && (
              
@@ -345,23 +346,22 @@ const Home=()=>{
 		<div class="card_ite">
 			<div class="card_inne">
 				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
+				<div class="role_nam">UNITY DEVELOPER</div>
 				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				tempor .</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Chennai,TamilNadu
+				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"70px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
 		<div class="card_ite">
 			<div class="card_inne">
 				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
+				<div class="role_nam">Microsoft Project Online</div>
 				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				tempor .</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -369,10 +369,9 @@ const Home=()=>{
 				<img src={talent}className="im"/>
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				tempor </div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bangalore,Karnataka </div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software</p></div>
 			</div>
 		</div>
 		<div class="card_ite">
@@ -380,10 +379,9 @@ const Home=()=>{
 				<img src={talent}className="im"/>
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				tempor .</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>India,India</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
 		<div class="card_ite">
@@ -391,10 +389,10 @@ const Home=()=>{
 				<img src={talent}className="im"/>
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				tempor .</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Surat,Gujurat
+				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -402,10 +400,108 @@ const Home=()=>{
 				<img src={talent}className="im"/>
 				<div class="role_nam">Black Panther</div>
 				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				tempor .</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Mumbai,Maharastra 
+				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>India,India
+				</div>
+        <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+		<div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra</div>
+        <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
+				.</div>
+        <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
+				.</div>
+        <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem
+				.</div>
+        <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
+			.</div>
+      <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
+				.</div>
+        <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
+			.</div>
+      <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={talent}className="im"/>
+				<div class="role_nam">Black Panther</div>
+				<div class="real_nam">Chadwick Boseman</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem   
+				.</div>
+        <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -416,51 +512,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 				.</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
-			</div>
-		</div>
-		<div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				tempor .</div>
-        <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
-			</div>
-		</div>
-    <div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				.</div>
-        <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
-			</div>
-		</div>
-    <div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				.</div>
-        <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
-			</div>
-		</div>
-    <div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				.</div>
-        <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"70px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -471,7 +523,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -482,62 +534,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 				.</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
-			</div>
-		</div>
-    <div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-			.</div>
-      <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
-			</div>
-		</div>
-    <div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				.</div>
-        <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
-			</div>
-		</div>
-    <div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				.</div>
-        <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
-			</div>
-		</div>
-    <div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-			.</div>
-      <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
-			</div>
-		</div>
-    <div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-				.</div>
-        <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -557,7 +554,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 				.</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -568,7 +565,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -579,7 +576,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 				.</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -599,7 +596,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -610,7 +607,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -621,7 +618,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -632,7 +629,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 	.</div>
   <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -643,14 +640,15 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software Pvt</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
 	</div>
 </div>  
            )}
- {displayText && <div className="table table-striped"style={{width:"100%",marginTop:"50px"}}>
-  <tr className="tab">
+ {displayText && <div style={{marginTop:"40px",marginLeft:"40px"}}>
+ 
+  <tr style={{}}>
     <th>jobs</th>
     <th>skills</th>
     <th>location</th>
@@ -658,8 +656,9 @@ const Home=()=>{
     <th>job type</th>
     <th>Experience</th>
   </tr>
+  
   <hr ></hr>
-  <tr className="tab">
+<tr >
     <td>IT Application Delivery Consultant</td>
     <td>GCP, Hadoop, HDFS, Hive, Java, Python</td>
     <td>Chennai, Tamil Nadu</td>
@@ -680,42 +679,6 @@ const Home=()=>{
   <tr className="tab">
     <td>IT Application Delivery Consultant</td>
     <td>GCP, Hadoop, HDFS, Hive, Java, Python</td>
-    <td>Chennai, Tamil Nadu</td>
-    <td>Tekwissen Software Pvt Ltd</td>
-    <td>Full Time</td>
-    <td>8-15 Yrs</td>
-  </tr>
-  <hr></hr>
-  <tr className="tab">
-    <td>IT Application Delivery Consultant</td>
-    <td>GCP, Hadoop, HDFS, Hive, Java, Python</td>
-    <td>Chennai, Tamil Nadu</td>
-    <td>Tekwissen Software Pvt Ltd</td>
-    <td>Full Time</td>
-    <td>8-15 Yrs</td>
-  </tr>
-  <hr></hr>
-  <tr className="tab">
-    <td>SharePoint lead</td>
-    <td>ReactJS, Rest API</td>
-    <td>Chennai, Tamil Nadu</td>
-    <td>Tekwissen Software Pvt Ltd</td>
-    <td>Full Time</td>
-    <td>8-15 Yrs</td>
-  </tr>
-  <hr></hr>
-  <tr className="tab">
-    <td>IT Application Delivery Consultant</td>
-    <td>GCP, Hadoop, HDFS, Hive, Java, Python</td>
-    <td>Chennai, Tamil Nadu</td>
-    <td>Tekwissen Software Pvt Ltd</td>
-    <td>Full Time</td>
-    <td>8-15 Yrs</td>
-  </tr>
-  <hr></hr>
-  <tr className="tab">
-    <td>IT Application Delivery Consultant</td>
-    <td>Goal On</td>
     <td>Chennai, Tamil Nadu</td>
     <td>Tekwissen Software Pvt Ltd</td>
     <td>Full Time</td>
@@ -766,7 +729,44 @@ const Home=()=>{
     <td>Full Time</td>
     <td>8-15 Yrs</td>
   </tr>
-  <p></p>
+  <hr></hr>
+  <tr className="tab">
+    <td>IT Application Delivery Consultant</td>
+    <td>GCP, Hadoop, HDFS, Hive, Java, Python</td>
+    <td>Chennai, Tamil Nadu</td>
+    <td>Tekwissen Software Pvt Ltd</td>
+    <td>Full Time</td>
+    <td>8-15 Yrs</td>
+  </tr>
+  <hr></hr>
+  <tr className="tab">
+    <td>IT Application Delivery Consultant</td>
+    <td>GCP, Hadoop, HDFS, Hive, Java, Python</td>
+    <td>Chennai, Tamil Nadu</td>
+    <td>Tekwissen Software Pvt Ltd</td>
+    <td>Full Time</td>
+    <td>8-15 Yrs</td>
+  </tr>
+  <hr></hr>
+  <tr className="tab">
+    <td>IT Application Delivery Consultant</td>
+    <td>GCP, Hadoop, HDFS, Hive, Java, Python</td>
+    <td>Chennai, Tamil Nadu</td>
+    <td>Tekwissen Software Pvt Ltd</td>
+    <td>Full Time</td>
+    <td>8-15 Yrs</td>
+  </tr>
+  <hr></hr>
+  <tr className="tab">
+    <td>IT Application Delivery Consultant</td>
+    <td>GCP, Hadoop, HDFS, Hive, Java, Python</td>
+    <td>Chennai, Tamil Nadu</td>
+    <td>Tekwissen Software Pvt Ltd</td>
+    <td>Full Time</td>
+    <td>8-15 Yrs</td>
+  </tr>
+  
+ 
   </div>}
 </div>
         </div>
