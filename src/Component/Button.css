@@ -1,0 +1,60 @@
+
+.co {
+    position: relative;
+    width: 100%;
+    padding: 15px 15px;
+    background-color: white;
+    border-bottom: 2px solid black;
+  }
+  .top-word {
+    position: absolute;
+    top: 1;
+    margin-left: 105px;
+    font-size: 12px; 
+  }
+  .la{
+    -webkit-text-stroke-width: 3px; 
+    -webkit-text-stroke-color: rgb(14, 190, 93); 
+    -webkit-text-fill-color:white
+  }
+  .span{
+    margin-left: 900px;
+    margin-bottom: -010px;
+  }
+  .login{
+  border-radius: 10px 10px;
+  background-color: red;
+  padding: 5px 23px;
+  color: white;
+  }
+  .Register{
+    margin-left: 40px;
+    background-color: red;
+    padding:  5px 23px;
+    color: white;
+    border-radius: 10px 10px;
+  }
+  .login:hover{
+    border: 3px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+  }
+  .Register:hover{
+    border: 3px solid blueviolet;
+    box-shadow: 0 0 15px blueviolet;
+  }
+  .login:active{
+    transform: scale(.9);
+  }
+  .Register:active{
+    transform: scale(.9);
+  }
+  .tr{
+    margin-left: 120px;
+    font-size: 25px;
+  }
+  .bottom-word {
+    position: relative;
+    margin-top: 15px;
+   
+  /* Adjust this value to control the vertical spacing */
+  }

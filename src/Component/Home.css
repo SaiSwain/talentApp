@@ -23,7 +23,7 @@
   border:1px solid rgb(247, 239, 239);
   border-radius: 5px;
   margin-left: 200px;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .phot{
   height: 5px;
@@ -266,7 +266,7 @@ margin-top:10px;
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
 body{
-	/* background: #eeeff4; */
+	background:hwb(0 96% 1%);
   
 }
 
@@ -274,14 +274,14 @@ body{
 	width: 90%;
 	height: 20px;
 	background: #0c0000;
-	color: hsl(0, 25%, 94%);
+	color:hwb(0 96% 2%);
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 20px;
-	text-transform: uppercase;
-	letter-spacing: 5px;
+	/* text-transform: uppercase;
+	letter-spacing: 5px; */
 	font-weight: 900;
   border-radius: 40px 30px;
 }
@@ -302,7 +302,7 @@ hr{
   margin-left: 0px;
 }
 .tab:hover{
-background-color:rgb(246, 248, 243);
+background-color:#fcfff7;
 }
 .wrappe .header:hover{
 	box-shadow: #4204ec;
@@ -380,7 +380,7 @@ color: #4204ec;
   color: #4204ec;
 }
 .cards_wra .card_inne{
-	background: #faf2f2;
+	background: rgb(252, 252, 252);
 	border-radius: 20px;
 	padding: 20px 15px;
 	min-width: 90px;
@@ -388,10 +388,18 @@ color: #4204ec;
 	max-height: 135px;
 	width: 100%;
 }
-.cards_wra .card_inne:hover{
-  box-shadow: #4204ec;
-  color: #4204ec;
+
+.card_inne:hover{
+  box-shadow: 0 0 15px green;
 }
+.card_inne:active{
+  box-shadow: 0 0 15px green;
+  transform: scale(0.9);
+}
+/* .cards_wra:hover{
+  box-shadow: 0 0 15px green;
+} */
+
 .cards_wra .card_ite .im{
 	width: 40%;
 	height: 30px;
@@ -405,8 +413,8 @@ color: #4204ec;
 .cards_wra .card_ite .role_nam{
 	color: #110105;
 	font-weight: 500;
-	letter-spacing: 2px;
-	text-transform: uppercase;
+	/* letter-spacing: 2px;
+	text-transform: uppercase; */
 	font-size: 15px;
 	white-space: nowrap;
   overflow: hidden;
