@@ -1,13 +1,9 @@
-import React,{useState,useRef,useEffect} from "react"
-import {Calendar}from "react-date-range"
-import format from "date-fns/format"
+import React,{useState} from "react"
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import "./Home.css";
 import photo from"./images/sa.jpeg";
-import {GoTrashcan}from "react-icons/go";
 import talent from "./images/talent1.png";
-import ReactDOM from 'react-dom';
 import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
 import { FaSistrix} from "react-icons/fa";
@@ -15,8 +11,27 @@ import { HiMapPin } from "react-icons/hi2";
 import {RxBorderSplit } from "react-icons/rx";
 import Child from "./Child";
 import { RxComponent2 } from "react-icons/rx";
-import {Link,NavLink,useNavigate}from "react-router-dom"
-
+import {useNavigate}from "react-router-dom"
+import actu from "./images/actu.png";
+import bim from "./images/bim.png";
+import cash from "./images/cash.png";
+import dro from "./images/dro.png";
+import gro from "./images/gro.jpg";
+import khata from "./images/khata.png";
+import nex from "./images/nex.png";
+import nob from "./images/nob.png";
+import qd from "./images/qd.png";
+import repr from "./images/repr.png";
+import rj from "./images/rj.jpg";
+import sa from "./images/sa.jpeg";
+import sul from "./images/sul.png";
+import sws from "./images/sws.png";
+import tv from "./images/tv.png";
+import ve from "./images/ve.png";
+import w from "./images/w.jpg";
+import jo from "./images/jo.png";
+import hr from "./images/hr.jpg";
+import be from "./images/be.png";
 const Home=()=>{
   const [value, setValue] = useState({ min: 0, max: 20 });
   let navigate = useNavigate();
@@ -24,7 +39,7 @@ const Home=()=>{
   const[inputList,setInputList]=useState("");
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
- const [showCheckboxes, setShowCheckboxes] = useState(false);
+ const [showCheckboxes, setShowCheckboxes] = useState(true);
   const [displayText, setDisplayText] = useState(false);
 
   const handleCheckboxButtonClick = () => {
@@ -96,7 +111,13 @@ const Home=()=>{
     }
     return(
         <div>
-   
+    <div class="co">
+		<div className='tr'>
+    <span class="top-word"style={{fontSize:"bold"}}>TM</span>
+    <span class="bottom-word">true<span style={{fontSize:"25px"}}><span style={{fontSize: "25px"
+	}}className='la'>T</span>alent</span></span><p style={{marginLeft:"-590px",fontSize:'15px',marginTop:"-30px"}}>TT Essential</p><p style={{marginLeft:"-350px",fontSize:'14px',marginTop:"-34px"}}>TT Gig</p>
+	<table style={{marginLeft:"700px",marginBottom:"-0px",marginTop:"-31px"}}><tr><td><button className='login'>Login</button></td><td><button className='Register'>Register</button></td></tr></table>
+	  </div></div>
           <div className="phot "><img src={photo}className="image"></img></div>
  <div className='container'>
         <div className='search-box1'>
@@ -341,14 +362,14 @@ const Home=()=>{
       <RxBorderSplit onClick={handleTextButtonClick}className="bg2">Hide</RxBorderSplit></div>
       {showCheckboxes && (
              
-        <div class="wrappe">  
-	<div class="cards_wra">
+        <div className="wrappe">  
+	<div className="cards_wra">
 		<div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">UNITY DEVELOPER</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Chennai,TamilNadu
+			<div className="card_inne">
+				<img src={tv}className="im"/>
+				<div className="role_nam">UNITY DEVELOPER</div>
+				<div className="real_nam">Full Time 0.6-1Yrs</div>
+				<div className="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Chennai,TamilNadu
 				</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"70px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -356,9 +377,9 @@ const Home=()=>{
 		</div>
 		<div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
+				<img src={actu}className="im"/>
 				<div class="role_nam">Microsoft Project Online</div>
-				<div class="real_nam">Chadwick Boseman</div>
+				<div class="real_nam">Full Time 5-9Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -366,9 +387,9 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
+				<img src={bim}className="im"/>
+				<div class="role_nam">Project Engineer</div>
+				<div class="real_nam">Full Time 2-5Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bangalore,Karnataka </div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software</p></div>
@@ -376,9 +397,9 @@ const Home=()=>{
 		</div>
 		<div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
+				<img src={cash}className="im"/>
+				<div class="role_nam">C++ Developers</div>
+				<div class="real_nam">Ful Time 2-3Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>India,India</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -386,9 +407,9 @@ const Home=()=>{
 		</div>
 		<div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
+				<img src={dro}className="im"/>
+				<div class="role_nam">SharePoint lead</div>
+				<div class="real_nam">Ful Time 6-15Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Surat,Gujurat
 				</div>
         <hr></hr><br></br>
@@ -397,9 +418,9 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
+				<img src={gro}className="im"/>
+				<div class="role_nam">CASA Officer</div>
+				<div class="real_nam">Ful Time 0-1Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Mumbai,Maharastra 
 				</div>
         <hr></hr><br></br>
@@ -408,9 +429,9 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
+				<img src={khata}className="im"/>
+				<div class="role_nam">Telecaller</div>
+				<div class="real_nam">Ful Time 0-1Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>India,India
 				</div>
         <hr></hr><br></br>
@@ -419,9 +440,9 @@ const Home=()=>{
 		</div>
 		<div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
+				<img src={nex}className="im"/>
+				<div class="role_nam">Marketing Manager</div>
+				<div class="real_nam">Ful Time 3-5Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -429,10 +450,10 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
+				<img src={nob}className="im"/>
+				<div class="role_nam">Angular Developer</div>
+				<div class="real_nam">Contract-to-Hire 4.5-10Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Hyderabad,Telengana 
 				.</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -440,76 +461,76 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
-				.</div>
+				<img src={qd}className="im"/>
+				<div class="role_nam">Python Developer</div>
+				<div class="real_nam">Full Time 3-8Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bhubaneswar,Odisha
+				</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem
-				.</div>
+				<img src={repr}className="im"/>
+				<div class="role_nam">HR Team Leader</div>
+				<div class="real_nam">Ful Time 1-2Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bangalore,Karnakaka
+				</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
-			.</div>
+				<img src={rj}className="im"/>
+				<div class="role_nam">Senier Java Developer</div>
+				<div class="real_nam">Ful Time 1-2Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Hyderabad,Telengana
+			</div>
       <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
-				.</div>
+				<img src={sul}className="im"/>
+				<div class="role_nam">React Mobile Developer</div>
+				<div class="real_nam">Contract-to-Hire 3-10Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bhubaneswar,Odisha
+				</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem 
-			.</div>
+				<img src={sws}className="im"/>
+				<div class="role_nam">Node Js Developer</div>
+				<div class="real_nam">Full Time 4-6Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>India,India
+			</div>
       <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem   
-				.</div>
+				<img src={tv}className="im"/>
+				<div class="role_nam">Java Developer</div>
+				<div class="real_nam">Full Time 5-7Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Mumbai,Maharastra
+				</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={ve}className="im"/>
+				<div class="role_nam">Maniframe Developer</div>
+				<div class="real_nam">Contract-to-Hire 5-7Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Ahmedbad,Gujarat
 				.</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"70px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -517,10 +538,10 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={w}className="im"/>
+				<div class="role_nam">Database Adminstrator</div>
+				<div class="real_nam">Full Time 5-6Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Hyderabad,Telengana
 			.</div>
       <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -529,9 +550,9 @@ const Home=()=>{
     <div class="card_ite">
 			<div class="card_inne">
 				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<div class="role_nam">Field Sales Executive</div>
+				<div class="real_nam">Full Time 2-6Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Coimbatore,TamilNadu
 				.</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -539,19 +560,19 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={tv}className="im"/>
+				<div class="role_nam">Senior Business Analyst</div>
+				<div class="real_nam">Contract-to-Hire 5-7Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Mohali,Punjab
 		.</div>
 			</div>
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={sws}className="im"/>
+				<div class="role_nam">Full Stack Developer</div>
+				<div class="real_nam">Full Time 3-5Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Delhi,Delhi,Hyderabad
 				.</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -559,10 +580,10 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={w}className="im"/>
+				<div class="role_nam">Sosial Media Influencer</div>
+				<div class="real_nam">Full Time 2-4Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bhubaneswar,Odisha
 			.</div>
       <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -570,10 +591,10 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={ve}className="im"/>
+				<div class="role_nam">BTB Developers</div>
+				<div class="real_nam">Full Time 2-10Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bangalore,Karnataka
 				.</div>
         <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -581,30 +602,19 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={sws}className="im"/>
+				<div class="role_nam">Branch Head</div>
+				<div class="real_nam">Full Time 10-15Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>India,India
 			.</div>
 			</div>
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
-			.</div>
-      <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
-			</div>
-		</div>
-    <div class="card_ite">
-			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={w}className="im"/>
+				<div class="role_nam">Technical Lead</div>
+				<div class="real_nam">Full Time 5-6Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra
 			.</div>
       <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -612,10 +622,10 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={ve}className="im"/>
+				<div class="role_nam">Sales Executive</div>
+				<div class="real_nam">Full Time 5-7Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Mumbai,Maharastra
 			.</div>
       <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -623,10 +633,21 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={be}className="im"/>
+				<div class="role_nam">SharePoint Lead</div>
+				<div class="real_nam">Full Time 6-15Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra
+			.</div>
+      <hr></hr><br></br>
+       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+			</div>
+		</div>
+    <div class="card_ite">
+			<div class="card_inne">
+				<img src={jo}className="im"/>
+				<div class="role_nam">Shopify Developer</div>
+				<div class="real_nam">Full Time 1-5Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bangalore,Karnataka
 	.</div>
   <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
@@ -634,10 +655,10 @@ const Home=()=>{
 		</div>
     <div class="card_ite">
 			<div class="card_inne">
-				<img src={talent}className="im"/>
-				<div class="role_nam">Black Panther</div>
-				<div class="real_nam">Chadwick Boseman</div>
-				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Lorem ipsum dolor
+				<img src={hr}className="im"/>
+				<div class="role_nam">Field Sales Executive</div>
+				<div class="real_nam">Full Time 2-6Yrs</div>
+				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bhubaneswar,Odisha
 			.</div>
       <hr></hr><br></br>
        <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>

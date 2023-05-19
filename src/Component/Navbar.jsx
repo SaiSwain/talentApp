@@ -28,6 +28,25 @@ function Navbar() {
     let navigate = useNavigate();
     const[items,setItems]=useState([]);
     const[inputList,setInputList]=useState("");
+	// const [visible, setVisible] = useState(true);
+
+	// useEffect(() => {
+	//   const timer = setTimeout(() => {
+	// 	setVisible(false);
+	//   }, 60000);
+  
+	//   return () => {
+	// 	clearTimeout(timer);
+	//   };
+	// }, []);
+  
+	// const handleClose = () => {
+	//   setVisible(false);
+	// };
+  
+	// if (!visible) {
+	//   return null;
+	// }
     const itemEvent=(event)=>{
       setInputList(event.target.value);
     }
@@ -55,12 +74,24 @@ function Navbar() {
     let improve=()=>{
       navigate("/job/search")
     }
-    // let improve1=()=>{
-    //   navigate("/job/search")
-    // }
+  let improve1=()=>{
+	navigate("/job")
+  }
+  let improve2=()=>{
+	navigate("/register")
+  }
   return (
     <div>
-      
+	
+	  <div class="co">
+		<div className='tr'>
+    <span class="top-word"style={{fontSize:"bold"}}>TM</span>
+    <span class="bottom-word">true<span style={{fontSize:"25px"}}><span style={{fontSize: "25px"
+	}}className='la'>T</span>alent</span></span><p style={{marginLeft:"-590px",fontSize:'15px',marginTop:"-30px"}}>TT Essential</p><p  style={{marginLeft:"-350px",fontSize:'14px',marginTop:"-34px"}}>TT Gig</p>
+	<table style={{marginLeft:"700px",marginBottom:"-0px",marginTop:"-31px"}}>
+		<tr><td><button onClick={improve1}className='login'>Login</button></td>
+		<td><button onClick={improve2} className='Register'>Register</button></td></tr></table>
+	  </div></div>
       <h2>Get the <span className='heading'>Right Job</span> You Deserve</h2>
       <p>Your next career move starts here</p>
 	  <div className='bt'>
