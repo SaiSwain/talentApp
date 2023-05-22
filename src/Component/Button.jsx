@@ -1,5 +1,6 @@
 import React from "react"
 import "./Button.css"
+import login from"./images/login.png"
 const Button=()=>{
     return(
         <div>
@@ -12,7 +13,26 @@ const Button=()=>{
 		<tr><td><button className='login'>Login</button></td>
 		<td><button  className='Register'>Register</button></td></tr></table>
 	  </div></div>
-      <h1>sai</h1>
+    <div className="imagess"><img src={login}className="i"></img>
+    <h1 style={{marginTop:"400px",marginRight:"-900px",marginLeft:"-460px",fontSize:"25px"}}>Experience Hiring 2.0 with<span style={{color:"green"}}>TrueTalent</span> </h1>
+    <input type="btn"className="batt" placeholder="Learn more about Truetalent"></input><h1 >sai</h1>
+    </div>
+ 
+
+      <form className="f1">
+      
+      <div className="cpe">
+      <h5 type="text"placeholder="Email"className="pu">I'm an employer</h5>
+      </div> 
+   
+     
+      <div className="c6">
+        <h5 className="jo">I'm a candidate</h5>
+      </div>
+      </form>
+      <div className="c10">
+          <input className="e9" placeholder="Log in to TrueTalent"></input>
+        </div>
         </div>
     )
 }

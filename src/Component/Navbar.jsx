@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import "./Navbar.css"
 import { FaSistrix} from "react-icons/fa";
 import { HiMapPin } from "react-icons/hi2";
@@ -20,6 +20,7 @@ import sws from "./images/sws.png";
 import tv from "./images/tv.png";
 import ve from "./images/ve.png";
 import w from "./images/w.jpg";
+import pop from "./images/pop.png";
 import Child from "./Child";
 import {Link,NavLink,useNavigate}from "react-router-dom"
 function Navbar() {
@@ -28,25 +29,26 @@ function Navbar() {
     let navigate = useNavigate();
     const[items,setItems]=useState([]);
     const[inputList,setInputList]=useState("");
-	// const [visible, setVisible] = useState(true);
+	const [showPopup, setShowPopup] = useState(true);
 
-	// useEffect(() => {
-	//   const timer = setTimeout(() => {
-	// 	setVisible(false);
-	//   }, 60000);
-  
-	//   return () => {
-	// 	clearTimeout(timer);
-	//   };
-	// }, []);
-  
-	// const handleClose = () => {
-	//   setVisible(false);
-	// };
-  
-	// if (!visible) {
-	//   return null;
-	// }
+  const handleDelete = () => {
+    // Perform deletion logic here
+    // You can update the state or trigger an API call to delete the item
+
+    // For simplicity, let's just hide the pop-up box after deletion
+    setShowPopup(false);
+  };
+
+  useEffect(() => {
+    // Automatically hide the pop-up box after 3 seconds (3000 milliseconds)
+    const timer = setTimeout(() => {
+      setShowPopup(false);
+    }, 3000);
+
+    // Clean up the timer when the component is unmounted
+    return () => clearTimeout(timer);
+  }, []);
+
     const itemEvent=(event)=>{
       setInputList(event.target.value);
     }
@@ -81,7 +83,7 @@ function Navbar() {
 	navigate("/register")
   }
   return (
-    <div>
+    <div >
 	
 	  <div class="co">
 		<div className='tr'>
@@ -374,6 +376,23 @@ function Navbar() {
           })
         }
       </ol>
+	  {showPopup && (
+        <div className="popup-box">
+			 <button style={{border:"none",backgroundColor:"none",fontSize:"25px",marginTop:"5px"}} onClick={handleDelete} className='d'>
+            <i className="fas fa-trash-alt"></i> X
+          </button>
+		  <hr></hr>
+       <div className='pop'>
+		<div className='po'>
+		<img src={pop}className='if'></img>
+		</div>
+		</div>
+		<div style={{marginLeft:"950px"}}className='m1'>
+		<button className='b1'>Register now</button>
+		<button className='b2'>rules</button>
+	   </div>
+        </div>
+      )}
       </div>
   )
 }
