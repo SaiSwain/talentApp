@@ -266,7 +266,7 @@ margin-top:10px;
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
 body{
-	background:hwb(0 96% 1%);
+	background:rgb(255, 255, 255);
   
 }
 
@@ -380,7 +380,7 @@ color: #4204ec;
   color: #4204ec;
 }
 .cards_wra .card_inne{
-	background: rgb(252, 252, 252);
+	background: #f8f6f6;
 	border-radius: 20px;
 	padding: 20px 15px;
 	min-width: 90px;

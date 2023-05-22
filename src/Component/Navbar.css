@@ -141,7 +141,7 @@ color: white;
   }
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
 body{
-	background:hsl(0, 0%, 100%);
+	background:hwb(0 100% 0%);
 }
 
 .wrapper .header{
@@ -187,7 +187,7 @@ box-shadow: 0 0 15px green;
 }
 
 .cards_wrap .card_inner{
-	background: #ffffff;
+	background: #fcf9f9;
 	border-radius: 15px;
 	padding: 5px 25px;
 	min-width:0px;
@@ -250,4 +250,45 @@ box-shadow: 0 0 15px green;
 	.wrapper .header{
 		font-size: 14px;
 	}
+}
+.popup-box{
+  border: 1px solid black;
+color: white;
+background-color: #ffffff;
+  width: 90%;
+  margin-top: -500px;
+  margin-bottom: -200px;
+  height: 540px;
+  margin-left: 70px;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */ 
+}
+.d{
+  margin-left: 1150px;
+}
+
+.if{
+  height: 450px;
+  width: 80%;
+  margin-left: 125px;
+}
+.m{
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+.b1{
+  padding: 5px 20px;
+  border-radius: 10px 10px;
+ 
+}
+.b2{
+  padding: 5px 20px;
+  border-radius: 10px 10px;
+  background-color: rgb(137, 214, 182);
+}
+.m1{
+  display: flex;
+  justify-content: space-evenly;
 }

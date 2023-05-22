@@ -109,6 +109,12 @@ const Home=()=>{
     let improve=()=>{
       navigate("/job/search")
     }
+    let improve1=()=>{
+      navigate("/job")
+      }
+      let improve2=()=>{
+      navigate("/register")
+      }
     return(
         <div>
     <div class="co">
@@ -116,7 +122,7 @@ const Home=()=>{
     <span class="top-word"style={{fontSize:"bold"}}>TM</span>
     <span class="bottom-word">true<span style={{fontSize:"25px"}}><span style={{fontSize: "25px"
 	}}className='la'>T</span>alent</span></span><p style={{marginLeft:"-590px",fontSize:'15px',marginTop:"-30px"}}>TT Essential</p><p style={{marginLeft:"-350px",fontSize:'14px',marginTop:"-34px"}}>TT Gig</p>
-	<table style={{marginLeft:"700px",marginBottom:"-0px",marginTop:"-31px"}}><tr><td><button className='login'>Login</button></td><td><button className='Register'>Register</button></td></tr></table>
+	<table style={{marginLeft:"700px",marginBottom:"-0px",marginTop:"-31px"}}><tr><td><button onClick={improve1} className='login'>Login</button></td><td><button onClick={improve2} className='Register'>Register</button></td></tr></table>
 	  </div></div>
           <div className="phot "><img src={photo}className="image"></img></div>
  <div className='container'>
