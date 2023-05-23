@@ -43,7 +43,7 @@ function Navbar() {
     // Automatically hide the pop-up box after 3 seconds (3000 milliseconds)
     const timer = setTimeout(() => {
       setShowPopup(false);
-    }, 3000);
+    }, 30000);
 
     // Clean up the timer when the component is unmounted
     return () => clearTimeout(timer);

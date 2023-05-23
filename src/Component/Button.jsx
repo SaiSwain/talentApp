@@ -1,10 +1,22 @@
 import React from "react"
 import "./Button.css"
 import login from"./images/login.png"
+import { BsPerson } from "react-icons/bs";
+import {BsWindowDesktop} from "react-icons/bs";
+import Doct from "./Doct";
+import {Link,NavLink,useNavigate}from "react-router-dom"
 const Button=()=>{
+  let navigate = useNavigate();
+  let navbar1=()=>{
+    navigate("/reg1")
+    }
+    let navbar2=()=>{
+      navigate("/reg2")
+      }
     return(
         <div>
-           <div class="co">
+         
+      <div class="co">
 		<div className='tr'>
     <span class="top-word"style={{fontSize:"bold"}}>TM</span>
     <span class="bottom-word">true<span style={{fontSize:"25px"}}><span style={{fontSize: "25px"
@@ -17,21 +29,20 @@ const Button=()=>{
     <h1 style={{marginTop:"400px",marginRight:"-900px",marginLeft:"-460px",fontSize:"25px"}}>Experience Hiring 2.0 with<span style={{color:"green"}}>TrueTalent</span> </h1>
     <input type="btn"className="batt" placeholder="Learn more about Truetalent"></input><h1 >sai</h1>
     </div>
- 
-
       <form className="f1">
-      
-      <div className="cpe">
-      <h5 type="text"placeholder="Email"className="pu">I'm an employer</h5>
+      <div className="c11"onClick={navbar1}>
+      <h5 type="text"placeholder="Email"className="pu1"style={{marginLeft:"10px"}}>I'm an employer</h5>
+      <BsWindowDesktop className="bv"/>
+      <h5 style={{marginLeft:"-70px",marginTop:"200px",marginRight:"-90px"}}id="hg">I am here to look for job<br/> seeker</h5>
       </div> 
-   
-     
-      <div className="c6">
-        <h5 className="jo">I'm a candidate</h5>
+      <div className="c61"onClick={navbar2}>
+        <h5 className="jo1">I'm a candidate</h5>
+        <BsPerson className="jo2"/>
+        <h5 style={{marginRight:"-280px",marginLeft:"-0px",marginTop:"200px"}}>I am here to find my next Job</h5>
       </div>
       </form>
-      <div className="c10">
-          <input className="e9" placeholder="Log in to TrueTalent"></input>
+      <div className="c101">
+          <input className="e91" placeholder="Log in to TrueTalent"></input>
         </div>
         </div>
     )

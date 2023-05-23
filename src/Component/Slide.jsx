@@ -16,6 +16,9 @@ const Slide=()=>{
     let improve2=()=>{
     navigate("/register")
     }   
+  
+    
+   
   return(
     <div>
       <div class="co">
@@ -27,12 +30,12 @@ const Slide=()=>{
 		<tr><td><button onClick={improve1} className='login'>Login</button></td>
 		<td><button onClick={improve2} className='Register'>Register</button></td></tr></table>
 	  </div></div>
-    <div className="imagess"><img src={login}className="i"></img>
+   <div className="imagess"><img src={login}className="i"></img>
     <h1 style={{marginTop:"400px",marginRight:"-900px",marginLeft:"-460px",fontSize:"25px"}}>Experience Hiring 2.0 with<span style={{color:"green"}}>TrueTalent</span> </h1>
     <input type="btn"className="batt" placeholder="Learn more about Truetalent"></input><h1 >sai</h1>
     </div>
  
-
+    <div className="umb">
       <form className="f">
         <div className="c0">
           <h1 className="e3"style={{marginBottom:"100px",marginTop:"-600px"}}>Log in to TrueTalent</h1>
@@ -65,7 +68,7 @@ const Slide=()=>{
       </form>
       <div className="c10">
           <input className="e9" placeholder="Log in to TrueTalent"></input>
-        </div>
+        </div></div>
     </div>
   )
 }
