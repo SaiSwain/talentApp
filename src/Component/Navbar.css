@@ -141,7 +141,7 @@ color: white;
   }
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
 body{
-	background:hwb(0 100% 0%);
+	background:#ffffff;
 }
 
 .wrapper .header{
@@ -187,7 +187,7 @@ box-shadow: 0 0 15px green;
 }
 
 .cards_wrap .card_inner{
-	background: #fcf9f9;
+	background: hwb(0 100% 0%);
 	border-radius: 15px;
 	padding: 5px 25px;
 	min-width:0px;
@@ -215,7 +215,7 @@ box-shadow: 0 0 15px green;
 }
 
 .cards_wrap .card_item .real_name{
-	color: #b6c0c2;
+	color: #fdffff;
 	font-size: 12px;
 	font-weight: 100;
 	margin: 5px 0px 5px;
@@ -224,7 +224,7 @@ box-shadow: 0 0 15px green;
 .cards_wrap .card_item .film{
 	font-size: 14px;
 	line-height: 20px;
-	color: #7b8ca0;
+	color: #fbfdff;
 }
 
 @media screen and (max-width: 1024px){
@@ -254,7 +254,7 @@ box-shadow: 0 0 15px green;
 .popup-box{
   border: 1px solid black;
 color: white;
-background-color: #ffffff;
+background-color: hsl(0, 4%, 95%);
   width: 90%;
   margin-top: -500px;
   margin-bottom: -200px;
@@ -274,9 +274,9 @@ background-color: #ffffff;
   margin-left: 125px;
 }
 .m{
-text-overflow: ellipsis;
+/* text-overflow: ellipsis;
 overflow: hidden;
-white-space: nowrap;
+white-space: nowrap; */
 }
 .b1{
   padding: 5px 20px;
