@@ -60,7 +60,7 @@
   }
   .imagess{
     display: flex;
-    background-color: hwb(0 100% 0%);
+    background-color: hsl(0, 18%, 90%);
     width: 35%;
     height: 610px;
   }
@@ -216,7 +216,8 @@ border: 1px solid rgb(17, 2, 2);
   .bv{
     margin-top: 120px;
     margin-left: 100px;
-
+    padding: 10px;
+    height: 30px;
   }
   .jo1{
    text-align: center;
@@ -260,8 +261,9 @@ border: 1px solid rgb(17, 2, 2);
   margin-bottom: -00px;
   margin-top: -30px;
   border-radius: 10px 10px;
- border: none;
+
  margin-top: 340px;
+
 }
 .e91{
   padding: 10px 128px; 
@@ -269,7 +271,7 @@ border: 1px solid rgb(17, 2, 2);
   border-bottom-left-radius: 10px ;
  border-bottom-left-radius: 10px;
  border-top-left-radius: 10px;
- border: 1px solid rgb(17, 2, 2);
+ border: 1px solid  #14BC9A;
  background-color:  rgb(255, 255, 255); 
  text-align: center;
 }
