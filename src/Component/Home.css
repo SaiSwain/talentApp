@@ -27,10 +27,12 @@
 }
 .phot{
   height: 5px;
-  margin-left: 1170px;
+  margin-left: 1190px;
  width: 50%;
  padding: 10px 10px;
  border: 1px solid dotted red;
+ margin-top: 0px;
+ margin-bottom: -0px;
 }
 .date1{
   padding: 10px 30px ;
@@ -274,7 +276,7 @@ body{
 	width: 90%;
 	height: 20px;
 	background: #0c0000;
-	color:hwb(0 96% 2%);
+	color:rgb(255, 255, 255);
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -316,10 +318,11 @@ color: #4204ec;
 }
 .bg1{
   margin-left: 740px;
-  margin-bottom: -50px;
+  margin-bottom: -55px;
   position: sticky;
   padding:10px 15px;
-  border:1px solid grey;
+  font-size: 25px;
+  /* border:1px solid grey; */
   border-radius: 40px 40px;
   /* border-top-left-radius: 5px;
   border-top-right-radius: 5px; */
@@ -345,15 +348,21 @@ color: #4204ec;
   margin-bottom: -65px;
   padding:10px 15px;
 }
+.cal{
+  margin-top: -30px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
 .bg2{
-  margin-left: 790px;
-  margin-bottom: -29px;
+  font-size:33px;
+  margin-left: 780px;
+  margin-bottom: -38px;
   padding:10px 15px;
-  border:1px solid grey;
+  /* border:1px solid grey; */
   border-radius: 40px 40px;
   /* border-top-left-radius: 5px;
   border-top-right-radius: 5px; */
-  /* margin-top: -1000px; */
+  margin-top: -10px;
  
 }
 .cards_wra{
@@ -380,7 +389,7 @@ color: #4204ec;
   color: #4204ec;
 }
 .cards_wra .card_inne{
-	background: #fcf8f8;
+	background: hsl(0, 0%, 100%);
 	border-radius: 20px;
 	padding: 20px 15px;
 	min-width: 90px;
@@ -391,6 +400,9 @@ color: #4204ec;
 
 .card_inne:hover{
   box-shadow: 0 0 15px green;
+}
+.card_inne{
+  box-shadow: 0 0 9px #c4c7c4;
 }
 .card_inne:active{
   box-shadow: 0 0 15px green;
