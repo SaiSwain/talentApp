@@ -1,26 +1,19 @@
-
+import { GoogleLogin } from 'react-google-login';
 import "./Slide.css"
+import { AiOutlineMail } from "react-icons/ai";
+import {FcGoogle } from "react-icons/fc";
+import { AiOutlineLock } from "react-icons/ai";
 import React, { useState,useHistory } from 'react';
 import login from"./images/login.png"
 import {Link,NavLink,useNavigate}from "react-router-dom"
-<script src="https://accounts.google.com/gsi/client" async defer></script>
 const Slide=()=>{
   const [showPassword, setShowPassword] = useState(false);
   const navigate=useNavigate();
- 
-    const handleGoogleSignIn = () => {
-      const googleAuth = window.google.accounts.id.initialize({
-        client_id: 'YOUR_CLIENT_ID',
-        callback: handleSignInCallback
-      });
-  
-      googleAuth.signIn();
-    };
-  
-    const handleSignInCallback = (response) => {
+    const handleGoogleSignIn = (response) => {
       console.log(response);
       // Handle the sign-in response here
     };
+   
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -49,23 +42,23 @@ const Slide=()=>{
     <h1 style={{marginTop:"400px",marginRight:"-1210px",marginLeft:"-150px",fontSize:"25px"}}>Experience Hiring 2.0 with<span style={{color:"#14BC9A"}}>TrueTalent</span> </h1>
     <input type="btn"className="batt" placeholder="Learn more about Truetalent"></input><h1 >sai</h1>
     <div className="c10">
-          <input className="e9" placeholder="Log in to TrueTalent"></input>
+          <button className="e9" >Learn more about TrueTalent</button>
         </div>
  
     </div>
    
       <form className="f">
         <div className="c0">
-          <h1 className="e3"style={{marginBottom:"100px",marginTop:"-530px",marginRight:"-320px",marginLeft:"-10px",fontSize:"20px"}}>Log in to TrueTalent</h1>
+          <h1 className="e3"style={{marginBottom:"100px",marginTop:"-530px",marginRight:"-50px",marginLeft:"-5px",fontSize:"20px"}}>Log in to TrueTalent</h1>
         </div>
       <div className="c1">
-      <input type="text"placeholder="Email"className="pu"></input>
+     <span><input type="text"placeholder="Email"className="pu"></input><AiOutlineMail className='fg'></AiOutlineMail></span>
       </div> 
       <div className="c">
-      <input type={showPassword ? 'text' : 'password'}placeholder="Password" className="in"/>
+    <input type={showPassword ? 'text' : 'password'}placeholder="Password" className="in"/> 
       <button onClick={togglePasswordVisibility}className="b">
         {showPassword ? <i className="fa fa-eye-slash"></i> : <i className="fa fa-eye"></i>}
-      </button></div>
+      </button> <AiOutlineLock id='lo'></AiOutlineLock></div>
      <div className="c2">
       <input type="checkbox"className="che"></input>
       <label className="check">Remember Me</label>
@@ -75,15 +68,26 @@ const Slide=()=>{
       <button type="text"placeholder="Sign In"className="ban">Sign In</button>
       </div> 
       <div className="c4">
-      <h6 className="hg1">-----------------------------OR-----------------------------</h6>
+      <h6 className="hg1">-------------------------------------------OR--------------------------------------------</h6>
       </div>
       <div className="c5">
-      <button type="text"placeholder="Email"className="cd"onClick={handleGoogleSignIn}>
+      <GoogleLogin
+      clientId="YOUR_CLIENT_ID"
+      onSuccess={handleGoogleSignIn}
+      onFailure={handleGoogleSignIn}
+      render={renderProps => (
+        <button type="text"placeholder="Email"className="cd"onClick={renderProps.onClick}disabled={renderProps.disabled}><FcGoogle className='google'></FcGoogle>
       
         Continue With Google</button>
+        // <button onClick={renderProps.onClick} disabled={renderProps.disabled}>
+        //   Sign in with Google
+        // </button>
+      )}
+    />
+  
       </div> 
       <div className="c6">
-        <h5 className="jo">(for Job Seekers only)</h5>
+        <p className="jo">(for Job Seekers only)</p>
       </div>
       </form>
       

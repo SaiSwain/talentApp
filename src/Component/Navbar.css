@@ -182,6 +182,9 @@ body{
 	padding: 5px 5px;
 	width: 10%;
 }
+.card_inner{
+  box-shadow: 0 0 9px hsl(120, 3%, 79%);
+}
 .card_inner:hover{
 box-shadow: 0 0 15px green;
 }

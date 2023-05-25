@@ -1,7 +1,10 @@
 import React,{useState} from "react"
 import DatePicker from 'react-datepicker';
+import { MdCalendarViewDay } from "react-icons/md";
 import 'react-datepicker/dist/react-datepicker.css';
+import { IoAppsSharp} from "react-icons/io5";
 import "./Home.css";
+import {FcCalendar } from "react-icons/fc";
 import photo from"./images/sa.jpeg";
 import talent from "./images/talent1.png";
 import InputRange from 'react-input-range';
@@ -16,6 +19,7 @@ import actu from "./images/actu.png";
 import bim from "./images/bim.png";
 import cash from "./images/cash.png";
 import dro from "./images/dro.png";
+
 import gro from "./images/gro.jpg";
 import khata from "./images/khata.png";
 import nex from "./images/nex.png";
@@ -339,14 +343,15 @@ const Home=()=>{
           <span class="slider round"></span>
           </label></span></h6>
           <h6>Job posted between</h6>
-         
-        <DatePicker  className="date1"
+     <span><DatePicker  className="date1"
           selected={startDate}
           onChange={handleStartDateChange}
           selectsStart
           startDate={startDate}
           endDate={endDate}
-        />
+          
+        /><FcCalendar className="cal"></FcCalendar></span>
+        
      
         <DatePicker className="date2"
           selected={endDate}
@@ -364,8 +369,9 @@ const Home=()=>{
            <div>
         
             <div className="v">
-           <h4 className="he">Search result</h4><p className="p">Sort by:</p><h6 className="h">Newest First</h6> <RxComponent2 onClick={handleCheckboxButtonClick}className="bg1">Show</RxComponent2>
-      <RxBorderSplit onClick={handleTextButtonClick}className="bg2">Hide</RxBorderSplit></div>
+           <h4 className="he">Search result</h4><p className="p">Sort by:</p><h6 className="h">Newest First
+           </h6> <IoAppsSharp onClick={handleCheckboxButtonClick}className="bg1">Show</IoAppsSharp>
+      <MdCalendarViewDay onClick={handleTextButtonClick}className="bg2">Hide</MdCalendarViewDay></div>
       {showCheckboxes && (
              
         <div className="wrappe">  

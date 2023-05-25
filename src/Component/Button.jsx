@@ -3,6 +3,8 @@ import "./Button.css"
 import login from"./images/login.png"
 import { BsPerson } from "react-icons/bs";
 import {BsWindowDesktop} from "react-icons/bs";
+import  can  from "./images/can.svg";
+import emp from "./images/emp.svg";
 import Doct from "./Doct";
 import {Link,NavLink,useNavigate}from "react-router-dom"
 const Button=()=>{
@@ -30,15 +32,15 @@ const Button=()=>{
     <input type="btn"className="batt" placeholder="Learn more about Truetalent"></input><h1 >sai</h1>
     </div>
       <form className="f1">
-      <div className="c11"onClick={navbar1}>
-      <h5 type="text"placeholder="Email"className="pu1"style={{marginLeft:"10px"}}>I'm an employer</h5>
-      <BsWindowDesktop className="bv"/>
-      <h5 style={{marginLeft:"-70px",marginTop:"200px",marginRight:"-90px"}}id="hg">I am here to look for job<br/> seeker</h5>
+     <div className="c11"onClick={navbar1}>
+      <p type="text"placeholder="Email"className="pu1"style={{marginLeft:"10px"}}>I'm an employer</p>
+      <img src={emp} className="bv"/>
+      <p style={{marginLeft:"-110px",marginTop:"200px",marginRight:"-190px",fontSize:"15px"}}id="hg">I am here to look for job<br/> seeker</p>
       </div> 
       <div className="c61"onClick={navbar2}>
-        <h5 className="jo1">I'm a candidate</h5>
-        <BsPerson className="jo2"/>
-        <h5 style={{marginRight:"-280px",marginLeft:"-0px",marginTop:"200px"}}>I am here to find my next Job</h5>
+        <p className="jo1">I'm a candidate</p>
+        <img src={can}className="jo2"/>
+        <p style={{marginRight:"-500px",marginLeft:"-20px",marginTop:"200px",fontSize:"15px"}}>I am here to find my next Job</p>
       </div>
       </form>
       <div className="c101">
