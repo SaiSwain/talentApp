@@ -1,10 +1,12 @@
 
+  
+
 .co {
-  position: relative;
+  position: fixed;
   width: 100%;
-  padding: 15px 15px;
+  padding: 10px 10px;
   background-color: white;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid rgb(194, 191, 191);
 }
 .top-word {
   position: absolute;
@@ -14,18 +16,19 @@
 }
 .la{
   -webkit-text-stroke-width: 3px; 
-  -webkit-text-stroke-color: rgb(14, 190, 93); 
+  -webkit-text-stroke-color: #14BC9A; 
   -webkit-text-fill-color:white
 }
 .span{
   margin-left: 900px;
-  margin-bottom: -010px;
+  margin-bottom: -10px;
 }
 .login{
 border-radius: 10px 10px;
 background-color: red;
 padding: 5px 23px;
 color: white;
+border:none;
 }
 .Register{
   margin-left: 40px;
@@ -33,15 +36,9 @@ color: white;
   padding:  5px 23px;
   color: white;
   border-radius: 10px 10px;
+  border:none;
 }
-.login:hover{
-  border: 3px solid blueviolet;
-  box-shadow: 0 0 15px blueviolet;
-}
-.Register:hover{
-  border: 3px solid blueviolet;
-  box-shadow: 0 0 15px blueviolet;
-}
+
 .login:active{
   transform: scale(.9);
 }
@@ -50,16 +47,37 @@ color: white;
 }
 .tr{
   margin-left: 120px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .bottom-word {
   position: relative;
   margin-top: 15px;
- 
+
 /* Adjust this value to control the vertical spacing */
 }
+#bv1{
+  margin-top: -15px;
+  border: none;
+  background-color: white;
+  margin-bottom: -100px;
 
+}
+#bv2{
+  margin-top: -292px;
+  border: none;
+  background-color: white;
+  margin-bottom: -100px;
+}
 
+#pot1{
+  margin-top: 90px;
+  margin-bottom: -90px;
+}
+
+#mj{
+  margin-top: 20px;
+  
+}
 
 
 
@@ -87,9 +105,9 @@ color: white;
   .send:focus{
     border:none;
   }
-  .search{
-    margin-right: -110px;
-  }
+  /* .search{
+    margin-right: px;
+  } */
   .search{
     padding:8px;
     background-color: rgb(137, 214, 182);
@@ -111,9 +129,9 @@ color: white;
     margin-left: 225px;
     margin-bottom: 100px;
   }
-  .bt{
-    margin-right: -560px;
-  }
+  /* .bt{
+    margin-right: -60px;
+  } */
   .head{
     margin-top: -80px;
   }
@@ -125,13 +143,13 @@ color: white;
   
   }
   .heading{
-    color:rgb(137, 214, 182);
+    color:#14BC9A;
   }
   .send{
     border:none;
   }
   .sai{
-    margin-right: 5px;
+    margin-right: px;
   }
   p{
     text-align: center;
@@ -163,13 +181,14 @@ body{
 
 .cards_wrap{
 	padding: 10px;
-	width: 90%;
+	width: 80%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
   border-radius: 20px 20px;
-  column-gap: 5px;
-  margin-left: 60px;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-left: 104px;
 }
 /* .cards_wrap:hover{
   box-shadow: 0 0 15px green;
@@ -180,7 +199,7 @@ body{
 }
 .cards_wrap .card_item{
 	padding: 5px 5px;
-	width: 10%;
+	width: 9%;
 }
 .card_inner{
   box-shadow: 0 0 9px hsl(120, 3%, 79%);
@@ -192,18 +211,18 @@ box-shadow: 0 0 15px green;
 .cards_wrap .card_inner{
 	background: hwb(0 100% 0%);
 	border-radius: 15px;
-	padding: 5px 25px;
+	padding: 2px 30px;
 	min-width:0px;
 	min-height: 65px;
-	max-height: 70px;
-	width: 70%;
+	max-height: 74px;
+	width: 60%;
 }
 
 .cards_wrap .card_item .img{
-	width: 60px;
-	height: 60px;
-	margin-top: 3px;
-  margin-left: 10px;
+	width: 100px;
+	height: 35px;
+	margin-top: 17px;
+  margin-left: -19px;
 }
 
 .cards_wrap .card_item .role_name{
@@ -213,8 +232,8 @@ box-shadow: 0 0 15px green;
 	text-transform: uppercase;
 	font-size: 10px;
 	white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cards_wrap .card_item .real_name{
@@ -238,17 +257,17 @@ box-shadow: 0 0 15px green;
 
 @media screen and (max-width: 768px){
 	.cards_wrap .card_item{
-		width: 40%;
+		width: 50%;
 	}
 	.wrapper .header{
 		font-size: 16px;
-		height: 30px;
+		height: 60px;
 	}
 }
 
 @media screen and (max-width: 568px){
 	.cards_wrap .card_item{
-		width: 10%;
+		width: 100%;
 	}
 	.wrapper .header{
 		font-size: 14px;

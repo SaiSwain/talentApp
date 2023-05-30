@@ -1,4 +1,5 @@
 
+
 .co {
     position: relative;
     width: 100%;
@@ -38,14 +39,14 @@
     color: white;
     border-radius: 10px 10px;
   }
-  .login:hover{
+  /* .login:hover{
     border: 3px solid blueviolet;
     box-shadow: 0 0 15px blueviolet;
   }
   .Register:hover{
     border: 3px solid blueviolet;
     box-shadow: 0 0 15px blueviolet;
-  }
+  } */
   .login:active{
     transform: scale(.9);
   }
@@ -137,13 +138,13 @@
    margin-top: 470px;
   }
   .fg{
-    margin-right: -100px;
+    margin-right: 0px;
     margin-left: -350px;
   }
   #lo{
     margin-top: 20px;
     margin-left: -350px;
-    margin-right: -10px;
+    margin-right: 0px;
   }
   .che{
     padding: 0px 0px;
@@ -181,7 +182,7 @@
     display: flex;
     flex-direction: row;
     margin-left: -100px;
-    margin-right: -200px;
+    margin-right: 0px;
     margin-bottom: -900px;
    margin-top: 100px;
   }
@@ -254,15 +255,24 @@
   display: flex;
   flex-direction: row;
   /* padding: 20px 70px; */
-  margin-left: -15px;
-  margin-right: -120px;
+  margin-left: -545px;
+  margin-right: -0px;
   margin-bottom: -00px;
   margin-top: -0px;
   border-radius: 10px 10px;
  border: none;
  height: 30px;
  margin-top: 460px;
- /* margin-bottom: -110px; */
+ 
+}
+#hf{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+
+  width: 160%;
+
 }
 .e9{
   padding: 5px 80px; 
@@ -279,6 +289,3 @@
 .f{
   margin-top: -70px;
 }
-/* .gh{
-  background-color: #eeeff4;
-} */
