@@ -394,7 +394,7 @@ const Home=()=>{
 				<div class="real_nam">Full Time 5-9Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -404,7 +404,7 @@ const Home=()=>{
 				<div class="real_nam">Full Time 2-5Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bangalore,Karnataka </div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software</p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software</p></div>
 			</div>
 		</div>
 		<div class="card_ite">
@@ -414,7 +414,7 @@ const Home=()=>{
 				<div class="real_nam">Ful Time 2-3Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>India,India</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
 		<div class="card_ite">
@@ -425,7 +425,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Surat,Gujurat
 				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -436,7 +436,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Mumbai,Maharastra 
 				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -447,7 +447,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>India,India
 				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
 		<div class="card_ite">
@@ -457,7 +457,7 @@ const Home=()=>{
 				<div class="real_nam">Ful Time 3-5Yrs</div>
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -468,7 +468,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Hyderabad,Telengana 
 				.</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -479,7 +479,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bhubaneswar,Odisha
 				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -490,7 +490,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bangalore,Karnakaka
 				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -501,7 +501,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Hyderabad,Telengana
 			</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -512,7 +512,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bhubaneswar,Odisha
 				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -523,7 +523,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>India,India
 			</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -534,7 +534,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Mumbai,Maharastra
 				</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -556,7 +556,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Hyderabad,Telengana
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -567,7 +567,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Coimbatore,TamilNadu
 				.</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -587,7 +587,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Delhi,Delhi,Hyderabad
 				.</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -598,7 +598,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bhubaneswar,Odisha
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -609,7 +609,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bangalore,Karnataka
 				.</div>
         <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -629,7 +629,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -640,7 +640,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Mumbai,Maharastra
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -651,7 +651,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Pune,Maharastra
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -662,7 +662,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bangalore,Karnataka
 	.</div>
   <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
     <div class="card_ite">
@@ -673,7 +673,7 @@ const Home=()=>{
 				<div class="fil"style={{color:"hwb(202 8% 7%)"}}><HiMapPin/>Bhubaneswar,Odisha
 			.</div>
       <hr></hr><br></br>
-       <div> <p style={{fontSize:"10px",marginRight:"60px",fontWeight:"bold"}}>Tekwissen Software </p></div>
+       <div> <p style={{fontSize:"10px",marginRight:"0px",fontWeight:"bold"}}>Tekwissen Software </p></div>
 			</div>
 		</div>
 	</div>

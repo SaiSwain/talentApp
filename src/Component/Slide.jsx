@@ -37,10 +37,14 @@ const Slide=()=>{
 		<tr><td><button onClick={improve1} className='login'>Login</button></td>
 		<td><button onClick={improve2} className='Register'>Register</button></td></tr></table>
 	  </div></div>
+    
     <div id="umb">
-   <div className="imagess"><img src={login}className="i"></img>   </div>
-    <h1 style={{marginTop:"400px",marginRight:"-1210px",marginLeft:"-150px",fontSize:"25px"}}>Experience Hiring 2.0 with<span style={{color:"#14BC9A"}}>TrueTalent</span> </h1>
-    <input type="btn"className="batt" placeholder="Learn more about Truetalent"></input><h1 >sai</h1>
+      
+   <div className="imagess"><img src={login}className="i"></img> 
+   <div id='hf'><h1 style={{marginTop:"400px",marginBottom:"900px",marginRight:"-0px",marginLeft:"-450px",fontSize:"20px"}} >Experience Hiring 2.0 with<span style={{color:"#14BC9A"}}>TrueTalent</span> </h1></div> 
+     </div>
+   
+    {/* <input type="btn"className="batt" placeholder="Learn more about Truetalent"></input><h1 >sai</h1> */}
     <div className="c10">
           <button className="e9" >Learn more about TrueTalent</button>
         </div>
@@ -49,7 +53,7 @@ const Slide=()=>{
    
       <form className="f">
         <div className="c0">
-          <h1 className="e3"style={{marginBottom:"100px",marginTop:"-530px",marginRight:"-50px",marginLeft:"-5px",fontSize:"20px"}}>Log in to TrueTalent</h1>
+          <h1 className="e3"style={{marginBottom:"100px",marginTop:"-530px",marginRight:"-0px",marginLeft:"-5px",fontSize:"20px"}}>Log in to TrueTalent</h1>
         </div>
       <div className="c1">
      <span><input type="text"placeholder="Email"className="pu"></input><AiOutlineMail className='fg'></AiOutlineMail></span>
@@ -68,7 +72,13 @@ const Slide=()=>{
       <button type="text"placeholder="Sign In"className="ban">Sign In</button>
       </div> 
       <div className="c4">
-      <h6 className="hg1">-------------------------------------------OR--------------------------------------------</h6>
+      <div
+                style={{ display: "flex", alignItems: "center", width: "50%" ,marginLeft:"185px"}}
+              >
+                <hr style={{ flex: 1, border: "1px solid #DCDCDC" }} />
+                <span style={{ margin: "0 10px", color: "black" }}>OR</span>
+                <hr style={{ flex: 1, border: "1px solid #DCDCDC" }} />
+              </div>
       </div>
       <div className="c5">
       <GoogleLogin
